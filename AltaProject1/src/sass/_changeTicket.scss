@@ -1,0 +1,180 @@
+.change-ticket-container {
+  padding: 2.4rem;
+  background-color: var(--background-color);
+  .change-ticket-header {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+
+  .changle-ticket-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.1rem;
+    .search-box {
+      width: 44.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ededed;
+      border-radius: 0.8rem;
+      padding: 1rem 1.6rem;
+      .search-box-input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-style: italic;
+      }
+      svg {
+        font-size: 2.4rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .btn-filter-csv {
+      background-color: transparent;
+      border: 1px solid var(--primary-color);
+      border-radius: 0.8rem;
+      margin-left: 1rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      color: var(--primary-color);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        transition: 0.5s;
+      }
+    }
+  }
+  .change-ticket-table-container {
+    display: flex;
+
+    .flex-1 {
+      margin-right: 3.2rem;
+      background-color: var(--white-color);
+      padding: 2.4rem;
+      border-radius: 2.4rem;
+      margin-left: -2.4rem;
+      margin-top: -2.4rem;
+    }
+    .flex-2 {
+      background-color: var(--white-color);
+      border-radius: 2.4rem;
+      padding-top: 2.2rem;
+      padding-left: 2.4rem;
+      margin-right: -3.2rem;
+      margin-top: -2.4rem;
+      .button-filter-table {
+        display: flex;
+        .btn-filter {
+          margin: 0 auto;
+          background-color: transparent;
+          border: 2px solid var(--primary-color);
+          color: var(--primary-color);
+          padding: 1rem 7rem;
+          border-radius: 0.8rem;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          &:hover {
+            cursor: pointer;
+            transition: 0.5s;
+            color: var(--white-color);
+            background-color: var(--primary-color);
+          }
+        }
+      }
+      .from-ticket-filter-table {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.2rem;
+        p {
+          margin-bottom: 0;
+          margin-right: 12.4rem;
+        }
+      }
+      .to-ticket-filter-table {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4.3rem;
+        p {
+          margin-bottom: 0;
+          margin-right: 11.2rem;
+        }
+      }
+      .table-filter-ticket-container {
+        .type-ticket-filter-table {
+          display: flex;
+          align-items: center;
+          .tittle-type-ticket {
+            margin-right: 12.4rem;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+          }
+          .name-type-ticket {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            opacity: 0.7;
+          }
+        }
+        .table-filter-ticket-title {
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 3rem;
+        }
+        .filter-button {
+          border: none;
+          border-radius: 0.8rem;
+          padding: none;
+          margin-bottom: 2.4rem;
+          margin-right: 5.6rem;
+          .option-filter {
+            display: flex;
+            align-items: center;
+            p {
+              margin-bottom: 0;
+              font-weight: 600;
+              font-size: 1.6rem;
+              line-height: 2rem;
+              white-space: nowrap;
+              padding: 1rem 1.6rem;
+            }
+          }
+        }
+        .Status-change-ticket {
+          display: flex;
+          .statust-filter-table {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-right: 2.6rem;
+          }
+          .group-radios {
+            .container-radio-button {
+              display: flex;
+              align-items: center;
+              margin-bottom: 1.6rem;
+              input {
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 0.8rem;
+              }
+              p {
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

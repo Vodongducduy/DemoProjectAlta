@@ -1,0 +1,48 @@
+.sibar-container {
+  padding-top: 1.7rem;
+  padding-left: 3.3rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-right: 3.6rem;
+  display: inline-block;
+  .service-pack {
+    margin-left: 10rem;
+    color: #000;
+    p {
+      margin-bottom: 0;
+    }
+    &:hover {
+      color: var(--primary-color);
+      transition: 0.5s ease;
+      cursor: pointer;
+    }
+  }
+  img {
+    margin-bottom: 5.9rem;
+  }
+  .menu-sibar-item {
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    height: 5.6rem;
+    width: 25.2rem;
+    padding-left: 2.7rem;
+    color: var(--text-color);
+    p {
+      margin-bottom: 0;
+    }
+    .sibar-icon {
+      margin-right: 1.4rem;
+      svg {
+        font-size: 2rem;
+      }
+    }
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+      transition: 0.5s ease;
+      cursor: pointer;
+    }
+  }
+}

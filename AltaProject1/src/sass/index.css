@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,800;0,900;1,800;1,900&display=swap");
+.sibar-container {
+  padding-top: 1.7rem;
+  padding-left: 3.3rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-right: 3.6rem;
+  display: inline-block;
+}
+
+.sibar-container .service-pack {
+  margin-left: 10rem;
+  color: #000;
+}
+
+.sibar-container .service-pack p {
+  margin-bottom: 0;
+}
+
+.sibar-container .service-pack:hover {
+  color: var(--primary-color);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.sibar-container img {
+  margin-bottom: 5.9rem;
+}
+
+.sibar-container .menu-sibar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  height: 5.6rem;
+  width: 25.2rem;
+  padding-left: 2.7rem;
+  color: var(--text-color);
+}
+
+.sibar-container .menu-sibar-item p {
+  margin-bottom: 0;
+}
+
+.sibar-container .menu-sibar-item .sibar-icon {
+  margin-right: 1.4rem;
+}
+
+.sibar-container .menu-sibar-item .sibar-icon svg {
+  font-size: 2rem;
+}
+
+.sibar-container .menu-sibar-item:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.body {
+  margin-top: 1.7rem;
+  margin-right: 3.2rem;
+  width: 100%;
+}
+
+.body .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.body .header-container .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #EDEDED;
+  border-radius: 1.2rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  width: 47rem;
+}
+
+.body .header-container .search-box input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-style: italic;
+}
+
+.body .header-container .search-box svg {
+  font-size: 2.4rem;
+}
+
+.body .header-container .search-box svg:hover {
+  cursor: pointer;
+}
+
+.body .header-container .user-notify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .header-container .user-notify svg {
+  font-size: 2.4rem;
+  margin-right: 2.9rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dasboard-container {
+  padding: 2.4rem;
+}
+
+.dasboard-container .tittle-dasboard {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.dasboard-container .revenue-dasboard {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.dasboard-container .total-revenue-week .total-revenue-week-tittle {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  opacity: 0.6;
+}
+
+.dasboard-container .total-revenue-week .total-revenue-week-value {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.dasboard-container .total-revenue-week .total-revenue-week-value span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.container {
+  border-radius: 2.4rem;
+  background-color: var(--background-sub-color);
+}
+
+.container .management-ticket-container {
+  padding: 2.4rem;
+}
+
+.management-ticket-container {
+  padding: 2.4rem;
+}
+
+.management-ticket-container .management-ticket-header {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.management-ticket-container .management-ticket-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.1rem;
+}
+
+.management-ticket-container .management-ticket-control .search-box {
+  width: 44.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+}
+
+.management-ticket-container .management-ticket-control .search-box .search-box-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-style: italic;
+}
+
+.management-ticket-container .management-ticket-control .search-box svg {
+  font-size: 2.4rem;
+}
+
+.management-ticket-container .management-ticket-control .search-box svg:hover {
+  cursor: pointer;
+}
+
+.management-ticket-container .management-ticket-control .filter-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--primary-color);
+}
+
+.management-ticket-container .management-ticket-control .btn-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.management-ticket-container .management-ticket-control .btn-filter:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.management-ticket-container .management-ticket-control .btn-filter p {
+  margin-bottom: 0;
+  margin-left: 0.2rem;
+}
+
+.management-ticket-container .management-ticket-control .btn-filter svg {
+  font-size: 2.4rem;
+}
+
+.management-ticket-container .management-ticket-control .btn-filter-csv {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.management-ticket-container .management-ticket-control .btn-filter-csv:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ant-spin-container .ticket-status {
+  border: 0.2rem solid;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+.ant-spin-container .ant-table-thead
+> tr
+> th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}
+
+.ant-spin-container .ant-table-thead > tr > th {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.ant-spin-container .ant-table-tbody > tr > td {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.change-ticket-container {
+  padding: 2.4rem;
+  background-color: var(--background-color);
+}
+
+.change-ticket-container .change-ticket-header {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+}
+
+.change-ticket-container .changle-ticket-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.1rem;
+}
+
+.change-ticket-container .changle-ticket-control .search-box {
+  width: 44.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+}
+
+.change-ticket-container .changle-ticket-control .search-box .search-box-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-style: italic;
+}
+
+.change-ticket-container .changle-ticket-control .search-box svg {
+  font-size: 2.4rem;
+}
+
+.change-ticket-container .changle-ticket-control .search-box svg:hover {
+  cursor: pointer;
+}
+
+.change-ticket-container .changle-ticket-control .btn-filter-csv {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: var(--primary-color);
+}
+
+.change-ticket-container .changle-ticket-control .btn-filter-csv:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.change-ticket-container .change-ticket-table-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-1 {
+  margin-right: 3.2rem;
+  background-color: var(--white-color);
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  margin-left: -2.4rem;
+  margin-top: -2.4rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 {
+  background-color: var(--white-color);
+  border-radius: 2.4rem;
+  padding-top: 2.2rem;
+  padding-left: 2.4rem;
+  margin-right: -3.2rem;
+  margin-top: -2.4rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .button-filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .button-filter-table .btn-filter {
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 1rem 7rem;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .button-filter-table .btn-filter:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .from-ticket-filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .from-ticket-filter-table p {
+  margin-bottom: 0;
+  margin-right: 12.4rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .to-ticket-filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4.3rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .to-ticket-filter-table p {
+  margin-bottom: 0;
+  margin-right: 11.2rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .type-ticket-filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .type-ticket-filter-table .tittle-type-ticket {
+  margin-right: 12.4rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .type-ticket-filter-table .name-type-ticket {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  opacity: 0.7;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .table-filter-ticket-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .filter-button {
+  border: none;
+  border-radius: 0.8rem;
+  padding: none;
+  margin-bottom: 2.4rem;
+  margin-right: 5.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .filter-button .option-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .filter-button .option-filter p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  padding: 1rem 1.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .Status-change-ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .Status-change-ticket .statust-filter-table {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-right: 2.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .Status-change-ticket .group-radios .container-radio-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .Status-change-ticket .group-radios .container-radio-button input {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.8rem;
+}
+
+.change-ticket-container .change-ticket-table-container .flex-2 .table-filter-ticket-container .Status-change-ticket .group-radios .container-radio-button p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+.service-pack-container {
+  padding: 2.4rem;
+}
+
+.service-pack-container .service-pack-header {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.service-pack-container .service-pack-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.1rem;
+}
+
+.service-pack-container .service-pack-control .search-box {
+  width: 44.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+  border-radius: 0.8rem;
+  padding: 1rem 1.6rem;
+}
+
+.service-pack-container .service-pack-control .search-box .search-box-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-style: italic;
+}
+
+.service-pack-container .service-pack-control .search-box svg {
+  font-size: 2.4rem;
+}
+
+.service-pack-container .service-pack-control .search-box svg:hover {
+  cursor: pointer;
+}
+
+.service-pack-container .service-pack-control .filter-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--primary-color);
+}
+
+.service-pack-container .service-pack-control .btn-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.service-pack-container .service-pack-control .btn-filter:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service-pack-container .service-pack-control .btn-filter p {
+  margin-bottom: 0;
+  margin-left: 0.2rem;
+}
+
+.service-pack-container .service-pack-control .btn-filter svg {
+  font-size: 2.4rem;
+}
+
+.service-pack-container .service-pack-control .btn-filter-csv {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.service-pack-container .service-pack-control .btn-filter-csv:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+:root {
+  --primary-color: #ffb800;
+  --background-color: #f9f6f4;
+  --background-sub-color: #fff;
+  --text-color: #1e0d03;
+  --white-color: #fff;
+  --primary-font: 'Montserrat';
+}
+
+body {
+  font-family: var(--primary-font) !important;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+}
+/*# sourceMappingURL=index.css.map */
