@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { FiFilter } from 'react-icons/fi';
+import FilterForm from '../Component/Form/FilterForm';
 import ManagementTable from '../Component/Table/ManagementTable';
 
 export interface IManagementTicketProps {}
@@ -8,6 +10,11 @@ export interface IManagementTicketProps {}
 const ManagementTicket: React.FunctionComponent<IManagementTicketProps> = (
   props
 ) => {
+  const [openForm, setOpenForm] = useState(false);
+  function handleClick() {
+    setOpenForm(!openForm);
+  }
+
   return (
     <div className="management-ticket-container">
       <p className="management-ticket-header">Danh sách vé</p>
@@ -16,7 +23,7 @@ const ManagementTicket: React.FunctionComponent<IManagementTicketProps> = (
           <input placeholder="Tìm bằng số vé" className="search-box-input" />
           <HiOutlineSearch className="search-icon" />
         </div>
-        <div className="filter-button">
+        <div className="filter-button" onClick={() => handleClick()}>
           <button className="btn-filter">
             <FiFilter className="filter-icon" />
             <p>Lọc vé</p>
@@ -25,6 +32,7 @@ const ManagementTicket: React.FunctionComponent<IManagementTicketProps> = (
         </div>
       </div>
       <ManagementTable />
+      {openForm && <FilterForm openForm={setOpenForm} />}
     </div>
   );
 };

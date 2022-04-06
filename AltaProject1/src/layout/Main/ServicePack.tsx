@@ -1,11 +1,14 @@
 import React from 'react';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { FiFilter } from 'react-icons/fi';
+import { useState } from 'react';
 import ServicePackTable from '../Component/Table/ServicePackTable';
+import AddTicketPackForm from '../Component/Form/AddTicketPackForm';
 
 export interface IServicePackProps {}
 
 const ServicePack: React.FunctionComponent<IServicePackProps> = (props) => {
+  const [openAddTicketForm, setOpenAddTicketForm] = useState(false);
   return (
     <div className="service-pack-container">
       <p className="service-pack-header">Danh sách vé</p>
@@ -19,10 +22,18 @@ const ServicePack: React.FunctionComponent<IServicePackProps> = (props) => {
             <FiFilter className="filter-icon" />
             <p>Lọc vé</p>
           </button>
-          <button className="btn-filter-csv">Thêm gói vé</button>
+          <button
+            onClick={() => setOpenAddTicketForm(!openAddTicketForm)}
+            className="btn-filter-csv"
+          >
+            Thêm gói vé
+          </button>
         </div>
       </div>
       <ServicePackTable />
+      {openAddTicketForm && (
+        <AddTicketPackForm closeAddTicketForm={setOpenAddTicketForm} />
+      )}
     </div>
   );
 };

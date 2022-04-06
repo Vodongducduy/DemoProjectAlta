@@ -1,0 +1,128 @@
+.form-filter-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  .form-filter-container {
+    background-color: var(--background-sub-color);
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    width: 634px;
+    height: 453px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 29px 23px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in;
+    .title-form-filter {
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .day-from-expier {
+      display: flex;
+      margin-bottom: 2rem;
+      .day-to {
+        margin-right: 12.2rem;
+      }
+    }
+    .status-uses {
+      margin-bottom: 2.2rem;
+      .tittle-status-uses {
+        font-weight: 600;
+        font-size: 1.6;
+        line-height: 2.6;
+      }
+    }
+  }
+}
+.ant-radio-group {
+  display: flex !important;
+  justify-content: space-between;
+  .ant-radio-inner {
+    border: 2px solid #27aef9 !important;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    span {
+      position: absolute;
+    }
+  }
+  .ant-radio-checked .ant-radio-inner::after {
+    width: 25px;
+    height: 25px;
+    left: 5.25px;
+    top: 5.5px;
+    position: absolute;
+  }
+  .ant-radio-wrapper {
+    display: flex !important;
+    align-items: flex-end;
+  }
+}
+
+.ant-radio p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.checkin-status-use-tittle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1e0d03;
+}
+.flex {
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 50px;
+  .ant-checkbox-checked::after,
+  .ant-checkbox-inner::after,
+  .ant-checkbox-inner {
+    border-radius: 20% !important;
+  }
+  .ant-checkbox-group {
+    margin-left: 30px !important;
+    &-item {
+      margin: 0 60px !important;
+    }
+    :nth-child(3n) {
+      display: flex;
+      height: 0;
+      margin-left: -104px !important;
+    }
+  }
+}
+
+.filter-button {
+  display: flex;
+}
+
+.btn-filter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ff993c;
+  background-color: #fff;
+  border-style: none;
+  margin: 0 auto;
+  border: 1px solid #ff993c;
+  border-radius: 8px;
+  width: 160px;
+  height: 48px;
+  cursor: pointer;
+  bottom: 0;
+  &:hover {
+    transition: 0.5s ease-in;
+    color: #fff;
+    background-color: #ff993c;
+  }
+}

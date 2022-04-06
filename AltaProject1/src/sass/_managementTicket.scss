@@ -39,6 +39,7 @@
     .btn-filter {
       display: flex;
       align-items: center;
+      justify-content: center;
       background-color: transparent;
       border: 1px solid var(--primary-color);
       border-radius: 0.8rem;
@@ -100,5 +101,11 @@
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2.2rem;
+  }
+}
+.ant-picker {
+  border-radius: 1rem;
+  path {
+    color: var(--primary-color);
   }
 }

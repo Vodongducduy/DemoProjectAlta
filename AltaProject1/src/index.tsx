@@ -1,11 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 import './sass/index.css';
 
-const rootElement:any = document.getElementById("root");
+const rootElement: any = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
   <StrictMode>

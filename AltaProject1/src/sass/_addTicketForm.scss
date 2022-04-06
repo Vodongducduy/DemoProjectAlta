@@ -1,0 +1,305 @@
+.add-ticket-pack-form-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  .add-ticket-pack-form-container {
+    position: relative;
+    top: 15%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1.6rem;
+    padding: 2.4rem 3.2rem;
+    background-color: var(--background-sub-color);
+    width: 75.8rem;
+    z-index: 10;
+    .add-ticket-pack-form-tittle {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+    .add-ticket-pack-form-input {
+      margin-bottom: 2.5rem;
+      p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        span {
+          color: red;
+        }
+        margin-bottom: 0;
+      }
+      input {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+        border: 0.1rem solid #a5a8b1;
+        padding: 1rem 1.6rem;
+        border-radius: 0.8rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .day-exper-appy {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      .day-appy {
+        margin-right: 6.5rem;
+        p {
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          margin-bottom: 0;
+        }
+        .calander-apply {
+          display: flex;
+          align-items: center;
+          .calander-day {
+            display: flex;
+            align-items: center;
+            border: 0.1rem solid #a5a8b1;
+            border-radius: 0.8rem;
+            padding: 1rem 1.6rem;
+            margin-right: 2rem;
+            width: 14.2rem;
+            input {
+              border: none;
+              width: 100%;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .calander-hour {
+            border: 0.1rem solid #a5a8b1;
+            border-radius: 0.8rem;
+            padding: 1rem 1.6rem;
+            width: 14.2rem;
+            display: flex;
+            align-items: center;
+            input {
+              border: none;
+              width: 100%;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+      .day-exper {
+        p {
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          margin-bottom: 0;
+        }
+        .calander-exper {
+          display: flex;
+          align-items: center;
+          .calander-day {
+            border: 0.1rem solid #a5a8b1;
+            padding: 1rem 1.6rem;
+            border-radius: 0.8rem;
+            margin-right: 2.5rem;
+            width: 14.2rem;
+            display: flex;
+            align-items: center;
+            input {
+              width: 100%;
+              border: none;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .calander-hour {
+            border: 0.1rem solid #a5a8b1;
+            padding: 1rem 1.6rem;
+            border-radius: 0.8rem;
+            display: flex;
+            align-items: center;
+            width: 14.2rem;
+            input {
+              border: none;
+              width: 100%;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .price-ticket-apply {
+      margin-bottom: 2.4rem;
+      .price-ticket-apply-tittle {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+      .price-ticket-single {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        .checkbox-input {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: 0.8rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-right: 0.8rem;
+        }
+        .text-input {
+          background: #f1f4f8;
+          border-radius: 0.8rem;
+          border: none;
+          padding: 1rem 1.2rem;
+          margin-right: 0.8rem;
+          &:focus {
+            outline: none;
+          }
+        }
+        span {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      }
+      .price-ticket-combo {
+        display: flex;
+        align-items: center;
+        .checkbox-input {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: 0.8rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-right: 0.8rem;
+        }
+        .text-box-1 {
+          border: none;
+          background-color: #f1f4f8;
+          padding: 1rem 1.2rem;
+          border-radius: 0.8rem;
+          margin-right: 0.8rem;
+        }
+        .text-box-2 {
+          border: none;
+          background-color: #f1f4f8;
+          padding: 1rem 1.2rem;
+          border-radius: 0.8rem;
+          margin-right: 0.8rem;
+          margin-left: 0.8rem;
+        }
+        span {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      }
+    }
+    .status-add-ticket {
+      margin-bottom: 2.5rem;
+      .status-add-ticket-tittle {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-bottom: 0;
+      }
+      .selection-option {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 0.1rem solid #a5a8b1;
+        border-radius: 0.8rem;
+        padding: 1rem 1.2rem;
+        margin-bottom: 1.7rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        p {
+          margin-bottom: 0;
+          margin-right: 1.6rem;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .notify {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        font-style: italic;
+        opacity: 0.4;
+        span {
+          color: red;
+          margin-right: 0.4rem;
+          opacity: 1 !important;
+        }
+      }
+    }
+    .btn-save-cancel {
+      text-align: center;
+      .btn-cancel {
+        background-color: transparent;
+        border: 0.1rem solid #ff993c;
+        color: #ff993c;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        border-radius: 0.8rem;
+        padding: 1.1rem 6.2rem;
+        margin-right: 3rem;
+        &:hover {
+          cursor: pointer;
+          background-color: #ff993c;
+          border: 0.1rem solid #ff993c;
+          color: var(--white-color);
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          border-radius: 0.8rem;
+          transition: 0.5s;
+        }
+      }
+      .btn-save {
+        background-color: #ff993c;
+        border: 0.1rem solid #ff993c;
+        color: var(--white-color);
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        border-radius: 0.8rem;
+        padding: 1.1rem 6.2rem;
+        &:hover {
+          cursor: pointer;
+          background-color: transparent;
+          border: 0.1rem solid #ff993c;
+          color: #ff993c;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          border-radius: 0.8rem;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
