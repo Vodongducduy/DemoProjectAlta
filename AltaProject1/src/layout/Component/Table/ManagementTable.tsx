@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'antd';
 import { GoPrimitiveDot } from 'react-icons/go';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from '../../../Firebase/Firebase-config';
 
 const columns = [
   {
@@ -112,7 +114,22 @@ export interface ITableManagementTicketProps {}
 const TableManagementTicket: React.FunctionComponent<
   ITableManagementTicketProps
 > = (props) => {
-  return <Table columns={columns} dataSource={data} />;
+  const [ticketsData, setTicketsData] = useState();
+
+  useEffect(() => {
+    const getAllTickets = async () => {
+      await onSnapshot(collection(db, 'tickets'), (snapshot) => {
+        const tickets: any = [];
+        snapshot.forEach((doc) => {
+          tickets.push(doc.data());
+        });
+        setTicketsData(tickets.sort((a: any, b: any) => a.key - b.key));
+      });
+    };
+
+    getAllTickets();
+  }, []);
+  return <Table columns={columns} dataSource={ticketsData} />;
 };
 
 export default TableManagementTicket;
