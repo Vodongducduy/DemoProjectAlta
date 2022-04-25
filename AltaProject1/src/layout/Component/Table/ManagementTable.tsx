@@ -3,6 +3,7 @@ import { Table } from 'antd';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from '../../../Firebase/Firebase-config';
+import { Tickets } from '../../../InterFace/Interface';
 
 const columns = [
   {
@@ -79,57 +80,31 @@ const columns = [
   },
 ];
 
-const data = [
-  {
-    key: '1',
-    nameEvent: 'Hội chợ triển lãm tiêu dùng 2021',
-    bookingCode: 'ALTFGHJU',
-    numberTicket: 123456789034,
-    dayUser: '14/04/2021',
-    statusTicket: 'Đã sử dụng',
-    gate: 'Cổng 1',
-  },
-  {
-    key: '2',
-    nameEvent: 'Hội chợ triển lãm tiêu dùng 2021',
-    bookingCode: 'ALTOJMNB',
-    numberTicket: 236784631642,
-    dayUser: '14/04/2021',
-    statusTicket: 'Chưa sử dụng',
-    gate: '-',
-  },
-  {
-    key: '3',
-    nameEvent: 'Hội chợ triển lãm tiêu dùng 2021',
-    bookingCode: 'ALTQTYJH',
-    numberTicket: 487621489474,
-    dayUser: '14/04/2021',
-    statusTicket: 'Hết hạn',
-    gate: '-',
-  },
-];
-
-export interface ITableManagementTicketProps {}
+export interface ITableManagementTicketProps {
+  searchInput: string;
+  ticketsData: Tickets | any;
+}
 
 const TableManagementTicket: React.FunctionComponent<
   ITableManagementTicketProps
-> = (props) => {
-  const [ticketsData, setTicketsData] = useState();
+> = (props: ITableManagementTicketProps) => {
+  const [searchData, setSearchData] = useState<Tickets>();
 
   useEffect(() => {
-    const getAllTickets = async () => {
-      await onSnapshot(collection(db, 'tickets'), (snapshot) => {
-        const tickets: any = [];
-        snapshot.forEach((doc) => {
-          tickets.push(doc.data());
-        });
-        setTicketsData(tickets.sort((a: any, b: any) => a.key - b.key));
-      });
-    };
-
-    getAllTickets();
-  }, []);
-  return <Table columns={columns} dataSource={ticketsData} />;
+    if (props.searchInput) {
+      let a = props.ticketsData.filter((item: Tickets) =>
+        item.numberTicket.includes(props.searchInput)
+      );
+      setSearchData(a);
+    }
+  }, [props.searchInput]);
+  console.log('Check', typeof searchData);
+  return (
+    <Table
+      columns={columns}
+      dataSource={props.searchInput ? searchData : props.ticketsData}
+    />
+  );
 };
 
 export default TableManagementTicket;
